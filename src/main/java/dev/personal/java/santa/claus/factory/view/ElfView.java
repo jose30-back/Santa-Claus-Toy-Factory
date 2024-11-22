@@ -1,6 +1,11 @@
 package dev.personal.java.santa.claus.factory.view;
 
+import dev.personal.java.santa.claus.factory.controller.ToyController;
+import dev.personal.java.santa.claus.factory.dtos.GoodToyDto;
+
 public class ElfView extends View {
+
+    private static final ToyController controller = new ToyController();
 
     public static void showElfView() {
         System.out.println("Gestor de juguetes (Tipo de sesión: Elfo)");
@@ -33,7 +38,11 @@ public class ElfView extends View {
         int age = scanner.nextInt();
         System.out.println("Ingrese la categoria:");
         String category = scanner.next();
+
+        controller.saveGoodToy(new GoodToyDto(title,brand,age,category));
     }
+
+    
 
 
 }
