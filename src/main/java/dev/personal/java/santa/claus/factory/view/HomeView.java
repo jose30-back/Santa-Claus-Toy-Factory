@@ -15,6 +15,4 @@ public class HomeView extends View {
         if (option == 2) SantaView.showSantaView();
         if (option == 3) quit();
     }
-
-
 }

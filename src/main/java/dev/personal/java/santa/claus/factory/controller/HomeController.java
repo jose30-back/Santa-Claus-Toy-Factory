@@ -4,8 +4,10 @@ import dev.personal.java.santa.claus.factory.view.HomeView;
 
 public class HomeController {
 
-   public static void showMenu(){
+   public static void startApp(){
     HomeView.showMainMenu();
    }
+
+
 
 }
